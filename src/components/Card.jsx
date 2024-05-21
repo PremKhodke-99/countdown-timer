@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Card.module.css';
 
-function Card({ time, name }) {
+function Card({ time = 0, name }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.flexbox}>
