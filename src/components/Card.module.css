@@ -1,0 +1,28 @@
+.wrapper {
+    border-radius: 16px;
+    height: 10rem;
+    width: 10rem;
+    background: rgb(246, 9, 255);
+    background: linear-gradient(45deg, rgba(246, 9, 255, 1) 20%, rgba(11, 229, 255, 1) 81%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.wrapper .flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .flexbox h1{
+    font-size: 60px;
+}
+
+.wrapper .flexbox h2{
+    font-size: 30px;
+    color: #a6b0e1;
+}

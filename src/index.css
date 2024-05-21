@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(121, 211, 255);
+  background: linear-gradient(191deg, rgba(121, 211, 255, 1) 0%, rgba(170, 95, 255, 1) 89%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  line-height: 20px;
+}
+
+.wrapper h1 {
+  font-size: 50px;
+}
+
+.wrapper .form {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper .form input {
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.wrapper .form button {
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper .cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    line-height: 3rem;
+  }
+
+  .wrapper h1 {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper .cards {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+}
+
+/* 
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {} 
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {} 
+*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
