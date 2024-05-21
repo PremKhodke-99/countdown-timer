@@ -50,6 +50,7 @@ function App() {
         clearInterval(timer);
         setIsTimesUp(true);
         setIsTimerRunning(false);
+        <Audio />
         setRemaining({
           days: 0,
           hours: 0,
@@ -86,7 +87,10 @@ function App() {
       </form>
 
       {
-        isTimesUp ? (<p className='para'>🎉 The countdown is over! What's next on your adventure? 🎉</p>) : isTimesOK ? (
+        isTimesUp ? (<>
+          <p className='para'>🎉 The countdown is over! What's next on your adventure? 🎉</p>
+          <audio src='/thend.mp3' autoPlay></audio>
+        </>) : isTimesOK ? (
           <div className='cards'>
             <Card time={remaining.days} name={'Days'} />
             <Card time={remaining.hours} name={'Hours'} />
