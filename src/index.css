@@ -70,6 +70,11 @@ body {
   gap: 20px;
 }
 
+.wrapper .para{
+  color: #ae00ff;
+  line-height: 20px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 991px) {
   body {
